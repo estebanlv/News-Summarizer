@@ -113,10 +113,6 @@ def run_news_report(source_url: str, limit: int, fc: FireCrawlClient, sz: Summar
         agent=agent,
     )
 
-    # Configure the Gemini-based LLM for CrewAI’s internal planning
-    gemini_api_key = os.getenv("GEMINI_API_KEY")
-    gemini_model   = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-preview-04-17")
-
     crew = Crew(
         agents=[agent],
         tasks=[report_task],
