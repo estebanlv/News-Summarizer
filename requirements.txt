@@ -1,0 +1,5 @@
+crewai>=0.108.0        # Agent framework
+firecrawl-py>=0.3.0    # Web crawling SDK
+google-genai>=0.3.0    # Gemini client
+python-dotenv>=1.0
+beautifulsoup4>=4.12
